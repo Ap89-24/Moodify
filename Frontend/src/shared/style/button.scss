@@ -1,0 +1,37 @@
+button {
+  margin-top: 10px;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #5b8cff, #7c4dff, #ff4ecd);
+  background-size: 300% 300%;
+  animation: gradientMove 5s ease infinite;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(124, 77, 255, 0.35);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
