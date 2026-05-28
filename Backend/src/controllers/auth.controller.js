@@ -136,6 +136,10 @@ const getMe = async (req, res) => {
 };
 
 const logoutUser = async (req, res) => {
+     try {
+    const userid = req.user.id;
+    
+    await userModel.findByIdAndDelete(userid);
     const token = req.cookies.token;
 
     res.clearCookie("token");
@@ -146,6 +150,12 @@ const logoutUser = async (req, res) => {
         success: true,
         message: "User logged out successfully",
     });
+     } catch (error) {
+          return res.status(500).json({
+            success: false,
+            message: error.message,
+        });
+     }
 };
 
 module.exports = {
