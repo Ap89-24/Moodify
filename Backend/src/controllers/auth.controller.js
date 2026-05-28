@@ -135,6 +135,7 @@ const getMe = async (req, res) => {
     });
 };
 
+
 const logoutUser = async (req, res) => {
      try {
     const userid = req.user.id;
