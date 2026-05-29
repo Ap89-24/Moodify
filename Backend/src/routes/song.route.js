@@ -10,6 +10,7 @@ const router = express.Router();
  * @access Public
  */
 router.post("/" , upload.single("song") , songController.songUpload);
+router.get("/" , songController.getSong);
 
 module.exports = router;
 
