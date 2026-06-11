@@ -9,7 +9,7 @@ const uploadImage = async ({buffer,filename,folder=""}) => {
 
     const file = await client.files.upload({
         file: await ImageKit.toFile(Buffer.from(buffer)),
-        filename: filename,
+        fileName: filename,
         folder
     });
 

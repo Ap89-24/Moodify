@@ -7,11 +7,13 @@ const songUpload = async (req , res) => {
     const songBuffer = req.file.buffer;
     const tags = id3.read(songBuffer);
     const {mood} = req.body;
+    console.log(tags);
 
 
     /**
      * @description-> Upload song and poster concurrently to optimize performance...
      */
+    
      const [songFile , poster] = await Promise.all([
      storageService.uploadImage({
         buffer: songBuffer,
@@ -19,7 +21,7 @@ const songUpload = async (req , res) => {
         folder: "/cohort/moodify/songs"
     }),
      storageService.uploadImage({
-        buffer: tags?.image.imageBuffer,
+        buffer: tags?.image?.imageBuffer,
         filename: (tags.title + "song") + ".jpeg",
         folder: "/cohort/moodify/posters"
     })
