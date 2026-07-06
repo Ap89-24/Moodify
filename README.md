@@ -31,15 +31,39 @@ Git
 GitHub
 
 
-🚀 Installation
-Clone the repository
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/your-username/moodify.git
-Navigate to the project
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
 cd moodify
-Install dependencies
+```
+
+### 3. Install Dependencies
+
+```bash
 npm install
-Start the development server
+```
+
+### 4. Start the Development Server
+
+```bash
 npm run dev
+```
+
+### 5. Open in Your Browser
+
+Visit the following URL to access the application:
+
+```text
+http://localhost:5173
+```
 
 
 🤖 What is Google MediaPipe?
