@@ -1,8 +1,8 @@
-Moodify 🎵😊
+## Moodify 🎵😊
 
 Moodify is an AI-powered music recommendation web application that detects a user's facial emotion in real time using Google MediaPipe and recommends music that matches their current mood. By leveraging computer vision and facial landmark detection, Moodify creates a personalized and interactive music listening experience without requiring manual mood selection.
 
-✨ Features
+## ✨ Features
 🎭 Real-time facial emotion detection using Google MediaPipe.
 🎵 Mood-based music recommendations.
 📷 Live webcam integration.
@@ -11,7 +11,7 @@ Moodify is an AI-powered music recommendation web application that detects a use
 🔄 Real-time mood updates without page refresh.
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend
 React.js
 JavaScript (ES6+)
@@ -66,7 +66,7 @@ http://localhost:5173
 ```
 
 
-🤖 What is Google MediaPipe?
+## 🤖 What is Google MediaPipe?
 
 Google MediaPipe is an open-source machine learning framework developed by Google for building real-time computer vision and AI applications. It provides pre-trained models for tasks such as face detection, face mesh, hand tracking, pose estimation, object detection, and gesture recognition. MediaPipe is optimized for high performance and can run efficiently in web, mobile, and desktop applications, making it ideal for interactive AI experiences like Moodify.
 
@@ -78,7 +78,7 @@ Lightweight and optimized for low latency.
 Easy integration with JavaScript, Python, C++, and Android.
 
 
-📈 Future Enhancements
+## 📈 Future Enhancements
 🎧 Spotify playlist integration.
 ❤️ Personalized music recommendations.
 📝 Emotion history tracking.
