@@ -52,7 +52,7 @@ const FaceMood = ({ onClick = () => {} }) => {
   };
 
   return (
-    <div>
+    <div className="face">
       <video ref={videoRef} autoPlay muted playsInline />
       <h1>
         Mood: {moodEmoji[mood]} {mood}
