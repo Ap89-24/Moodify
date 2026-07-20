@@ -4,6 +4,7 @@ import "../src/shared/style/global.scss";
 //import FaceMood from './features/Expression/components/FaceMood'
 import router from "./app.routes";
 import { AuthContextProvider } from "./features/auth/Provider/AuthProvider";
+import { SongContextProvider } from "./features/home/Provider/SongProvider";
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
      */
 
     <AuthContextProvider>
+    <SongContextProvider>
     <RouterProvider router={router} />
+    </SongContextProvider>
     </AuthContextProvider>
   )
 }

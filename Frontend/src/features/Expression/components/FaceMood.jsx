@@ -6,7 +6,7 @@ import { initFaceMesh } from "../utils/initMeshFace";
 
 
 
-const FaceMood = () => {
+const FaceMood = ({ onClick = () => {} }) => {
   const videoRef = useRef(null);
   const cameraRef = useRef(null);
   const [mood, setMood] = useState("neutral");
@@ -48,6 +48,7 @@ const FaceMood = () => {
         image: videoRef.current,
       });
     }
+    onClick(detectedMood.mood);
   };
 
   return (
